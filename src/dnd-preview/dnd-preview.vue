@@ -1,0 +1,31 @@
+<template>
+  <teleport to="body" v-if="collectedProps.isDragging">
+    <div
+      :style="{
+        position: 'fixed',
+        pointerEvents: 'none',
+        left: collectedProps.sourceClientOffset?.x + 'px',
+        top: collectedProps.sourceClientOffset?.y + 'px',
+        zIndex,
+      }"
+    >
+      <slot></slot>
+    </div>
+  </teleport>
+</template>
+<script setup>
+import { useDragLayer } from "vue3-dnd";
+defineProps({
+  zIndex: {
+    type: Number,
+    default: () => 9999999,
+  },
+});
+/**
+ * 获取容器
+ */
+let collectedProps = useDragLayer((monitor) => ({
+  isDragging: monitor.isDragging(),
+  sourceClientOffset: monitor.getSourceClientOffset(),
+}));
+</script>

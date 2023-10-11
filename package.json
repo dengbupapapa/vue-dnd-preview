@@ -1,0 +1,49 @@
+{
+  "name": "vue-dnd-preview",
+  "version": "0.1.2",
+  "main": "dist/vue-dnd-preview.common.js",
+  "description": "vue dnd preview in non-React-Dnd-HTML5-Backend",
+  "keywords": ["vue","dnd","preview"],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --target lib --name vue-dnd-preview src/dnd-preview/dnd-preview.vue",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.8.3",
+    "react-dnd-touch-backend": "^16.0.1",
+    "vue": "^3.2.13",
+    "vue3-dnd": "^2.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-cypress": "^2.15.1",
+    "eslint-plugin-vue": "^8.7.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
