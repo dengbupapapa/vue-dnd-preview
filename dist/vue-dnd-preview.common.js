@@ -82,8 +82,9 @@ var external_vue3_dnd_namespaceObject = require("vue3-dnd");
         style: (0,external_vue_namespaceObject.normalizeStyle)({
           position: 'fixed',
           pointerEvents: 'none',
-          left: (0,external_vue_namespaceObject.unref)(collectedProps).sourceClientOffset?.x + 'px',
-          top: (0,external_vue_namespaceObject.unref)(collectedProps).sourceClientOffset?.y + 'px',
+          transform: `translate(${(0,external_vue_namespaceObject.unref)(collectedProps).sourceClientOffset?.x}px, ${(0,external_vue_namespaceObject.unref)(collectedProps).sourceClientOffset?.y}px)`,
+          top: 0,
+          left: 0,
           zIndex: __props.zIndex
         })
       }, [(0,external_vue_namespaceObject.renderSlot)(_ctx.$slots, "default")], 4)])) : (0,external_vue_namespaceObject.createCommentVNode)("", true);

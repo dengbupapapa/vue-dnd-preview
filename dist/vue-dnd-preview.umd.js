@@ -133,8 +133,9 @@ var external_vue3_dnd_ = __webpack_require__(347);
         style: (0,external_vue_.normalizeStyle)({
           position: 'fixed',
           pointerEvents: 'none',
-          left: (0,external_vue_.unref)(collectedProps).sourceClientOffset?.x + 'px',
-          top: (0,external_vue_.unref)(collectedProps).sourceClientOffset?.y + 'px',
+          transform: `translate(${(0,external_vue_.unref)(collectedProps).sourceClientOffset?.x}px, ${(0,external_vue_.unref)(collectedProps).sourceClientOffset?.y}px)`,
+          top: 0,
+          left: 0,
           zIndex: __props.zIndex
         })
       }, [(0,external_vue_.renderSlot)(_ctx.$slots, "default")], 4)])) : (0,external_vue_.createCommentVNode)("", true);

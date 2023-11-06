@@ -4,8 +4,9 @@
       :style="{
         position: 'fixed',
         pointerEvents: 'none',
-        left: collectedProps.sourceClientOffset?.x + 'px',
-        top: collectedProps.sourceClientOffset?.y + 'px',
+        transform: `translate(${collectedProps.sourceClientOffset?.x}px, ${collectedProps.sourceClientOffset?.y}px)`,
+        top: 0,
+        left: 0,
         zIndex,
       }"
     >
