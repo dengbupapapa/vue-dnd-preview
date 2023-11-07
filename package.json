@@ -1,6 +1,6 @@
 {
   "name": "vue-dnd-preview",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "main": "dist/vue-dnd-preview.common.js",
   "description": "vue dnd preview in non-React-Dnd-HTML5-Backend",
   "keywords": ["vue","dnd","preview"],

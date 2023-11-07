@@ -10,7 +10,7 @@
         zIndex,
       }"
     >
-      <slot></slot>
+      <slot v-bind="collectedProps.sourceClientOffset"></slot>
     </div>
   </teleport>
 </template>

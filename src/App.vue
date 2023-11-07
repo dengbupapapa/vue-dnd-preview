@@ -17,8 +17,8 @@ function dragChange(event) {
       :data="{ text: '我是你的内容' }"
     >
       <div :ref="drag">drag text</div>
-      <dnd-preview>
-        <button>drag text</button>
+      <dnd-preview v-slot="offset">
+        <button>drag text{{ offset }}</button>
       </dnd-preview>
     </drag-box>
     <drop-box v-slot="{ drop }">

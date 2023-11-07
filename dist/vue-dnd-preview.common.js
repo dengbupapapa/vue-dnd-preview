@@ -87,7 +87,7 @@ var external_vue3_dnd_namespaceObject = require("vue3-dnd");
           left: 0,
           zIndex: __props.zIndex
         })
-      }, [(0,external_vue_namespaceObject.renderSlot)(_ctx.$slots, "default")], 4)])) : (0,external_vue_namespaceObject.createCommentVNode)("", true);
+      }, [(0,external_vue_namespaceObject.renderSlot)(_ctx.$slots, "default", (0,external_vue_namespaceObject.normalizeProps)((0,external_vue_namespaceObject.guardReactiveProps)((0,external_vue_namespaceObject.unref)(collectedProps).sourceClientOffset)))], 4)])) : (0,external_vue_namespaceObject.createCommentVNode)("", true);
     };
   }
 });

@@ -138,7 +138,7 @@ var external_vue3_dnd_ = __webpack_require__(347);
           left: 0,
           zIndex: __props.zIndex
         })
-      }, [(0,external_vue_.renderSlot)(_ctx.$slots, "default")], 4)])) : (0,external_vue_.createCommentVNode)("", true);
+      }, [(0,external_vue_.renderSlot)(_ctx.$slots, "default", (0,external_vue_.normalizeProps)((0,external_vue_.guardReactiveProps)((0,external_vue_.unref)(collectedProps).sourceClientOffset)))], 4)])) : (0,external_vue_.createCommentVNode)("", true);
     };
   }
 });
